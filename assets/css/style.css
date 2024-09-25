@@ -47,6 +47,21 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+/* tạo ra dấu ba chấm khi văn bản quá dài */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* khi 2 dòng trở lên sẽ có dấu ba chấm */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+/* xuống dòng khi gặp một từ dài */
+.break-all {
+  word-break: break-all;
+}
 /* -----------header------------- */
 .header.fixed {
   position: sticky;
@@ -54,6 +69,7 @@ a {
   background: #fffcf4;
   z-index: 1;
 }
+
 /* tác động vào class body là con của */
 .header .body {
   display: flex;
@@ -291,6 +307,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 .popular .course-item:hover {
   border-radius: 12px;
@@ -308,7 +325,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.popular .course-item .tittle a{
+.popular .course-item .tittle a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
@@ -341,4 +358,3 @@ a {
 .popular .course-item .btn-book:hover {
   background: var(--primary-btn);
 }
-
