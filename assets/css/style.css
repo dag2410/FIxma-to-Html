@@ -41,9 +41,9 @@ a {
   line-height: 1.27; /* 126.316% */
   letter-spacing: -0.76px;
 }
-.main_content {
-  max-width: calc(100% - 100px);
+.main-content {
   width: 1170px;
+  max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -84,10 +84,10 @@ a {
 }
 
 .nav a {
+  position: relative;
   color: #5f5b53;
   font-size: 1.6rem;
   padding: 8px 21px;
-  position: relative;
 }
 
 .nav li.active a,
@@ -115,7 +115,6 @@ a {
   margin-left: 49px;
 }
 .hero {
-  padding: 56px 300px 65px;
   background-color: #fffcf4;
 }
 .hero .body {
@@ -255,7 +254,7 @@ a {
 /* ========popular========== */
 
 .popular {
-  padding: 65px 300px;
+  padding: 65px 0;
   margin-top: 135px;
 }
 .popular-top .desc {
@@ -357,4 +356,66 @@ a {
 }
 .popular .course-item .btn-book:hover {
   background: var(--primary-btn);
+}
+
+/* -----------feedback----------- */
+.feedback {
+  margin-top: 135px;
+  background: #2e2100;
+  padding: 96px 0;
+}
+
+.feedback .feedback-item {
+  display: flex;
+}
+.feedback .feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .infor .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.41; /* 141.667% */
+}
+
+.feedback-item .infor .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.85; /* 185.714% */
+}
+
+.feedback-item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.53; /* 153.846% */
+}
+.feedback-item .dot.active {
+  background: #ffb900;
+  cursor: default;
 }
