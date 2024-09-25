@@ -364,8 +364,14 @@ a {
   background: #2e2100;
   padding: 96px 0;
 }
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
 
-.feedback .feedback-item {
+.feedback-item {
+  width: 100%;
+  flex-shrink: 0;
   display: flex;
 }
 .feedback .feedback-item .avatar {
@@ -418,4 +424,47 @@ a {
 .feedback-item .dot.active {
   background: #ffb900;
   cursor: default;
+}
+
+/* -----------features------------- */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+.features .body .images {
+  display: flex;
+  gap: 30px;
+}
+.features .body .images img {
+  width: 270px;
+  height: 405px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.features .images .lower {
+  margin-top: 34px;
+}
+.features .content {
+  width: 41%;
+  align-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+
+.features .cta-btn {
+  border-radius: 26px;
+  width: 137px;
+  height: 50px;
+  background-color: var(--primary-btn);
+  margin-top: 32px;
 }
